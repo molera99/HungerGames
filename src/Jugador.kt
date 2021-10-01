@@ -6,10 +6,29 @@ class Jugador {
     constructor(){
 
     }
-    constructor(distrito:Int,vida:Int,fuerza:Int){
+    constructor(distrito:Int){
         this.distrito=distrito
-        this.vida=vida
-        this.fuerza=fuerza
+    }
+
+    fun jugadores(): Array<Jugador?>{
+        var jugadores= arrayOfNulls<Jugador>(10)
+        var c=0
+        for(i in 0..4){
+                var jugador=Jugador(i)
+                jugadores[c]=jugador
+
+                var jugador2=Jugador(i)
+                jugadores[c+1]=jugador2
+            if(c!=8){
+                c=c+2
+            }
+
+
+
+            }
+
+        return jugadores
+
     }
 
 }
