@@ -7,4 +7,5 @@ var medicinas=0
         this.descripcion="Item que suma "+poder+" punto de vida"
         this.nombre="medicina"
     }
+    override fun toString() = this.nombre
 }

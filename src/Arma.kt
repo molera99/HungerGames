@@ -7,4 +7,5 @@ class Arma: Item {
         this.descripcion="Item que suma "+poder+" punto de fuerza"
         this.nombre="arma"
     }
+    override fun toString() = this.nombre
 }

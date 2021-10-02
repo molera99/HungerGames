@@ -30,5 +30,6 @@ class Jugador {
         return jugadores
 
     }
+    override fun toString() = "Jugador"
 
 }

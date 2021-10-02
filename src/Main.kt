@@ -8,6 +8,10 @@ var mapa=Mapa()
     mapa.itemsMapa()
     mapa.jugadoresMap()
     mapa.estadoMapa()
+println("cada 2 segundos")
+    println("Un jugador se mueve")
+mapa.movimientoJugador()
+mapa.estadoMapa()
 
 
 }

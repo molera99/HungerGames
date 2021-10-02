@@ -3,4 +3,5 @@ class Trampa: Item {
     this.descripcion="Trampa la cual hace insta kill"
         this.nombre="trampa"
     }
+    override fun toString() = this.nombre
 }

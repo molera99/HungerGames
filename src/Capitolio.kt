@@ -2,7 +2,7 @@ import java.util.*
 import kotlin.random.Random
 
 class Capitolio {
-    var muertos= arrayOfNulls<Jugador>(10)
+    var muertos= arrayOfNulls<Any>(10)
     var items= arrayOfNulls<Item>(100)
 
     fun recargaItems(): Array<Item?> {
