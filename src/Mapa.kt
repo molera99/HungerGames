@@ -6,11 +6,12 @@ class Mapa {
 
     var mapa=Array(5){Array<Any>(5){"nada"}}
     var caidos=Capitolio().muertos
-    fun itemsMapa(){
+
+    fun itemsMapa(eleccion:Int){
         var capitolio=Capitolio()
         var items=capitolio.recargaItems()
         var c=0
-        while (c!=10) {
+        while (c!=eleccion) {
             var eleccionItem= Random.nextInt(0,100)
             var eleccionPosicionX=Random.nextInt(0,5)
             var eleccionPosicionY=Random.nextInt(0,5)
@@ -21,13 +22,9 @@ class Mapa {
             }
 
         }
-        /*if(mapa[0][0]!=String && mapa[0][0]!=jugador){
-            var p=mapa[0][0] as Item
-            println(p.nombre)
-        }*/
-
-
     }
+
+
 
     fun jugadoresMap(){
         var jugador=Jugador()

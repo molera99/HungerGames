@@ -1,17 +1,17 @@
 fun main(){
 var capitolio=Capitolio()
 var items=capitolio.recargaItems()
-    /*for(i in 0..items.size-1){
-        println(items[i]?.descripcion)
-    }*/
+
 var mapa=Mapa()
-    mapa.itemsMapa()
+    mapa.itemsMapa(10)
     mapa.jugadoresMap()
     mapa.estadoMapa()
 println("cada 2 segundos")
-    println("Un jugador se mueve")
+    println("se mueven jugadores")
 mapa.movimientoJugador()
-mapa.estadoMapa()
-
+    println("cada 5 segundos")
+    println("se suman 4 items y se muestra el estado del mapa")
+    mapa.itemsMapa(4)
+    mapa.estadoMapa()
 
 }

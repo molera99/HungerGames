@@ -4,7 +4,6 @@ import kotlin.random.Random
 class Capitolio {
     var muertos= arrayOfNulls<Any>(10)
     var items= arrayOfNulls<Item>(100)
-
     fun recargaItems(): Array<Item?> {
         for(i in 0..items.size-1) {
             var eleccion = Random.nextInt(1, 4)
@@ -21,4 +20,5 @@ class Capitolio {
         }
         return items
     }
+
 }
