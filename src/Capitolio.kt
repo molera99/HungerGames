@@ -1,8 +1,9 @@
 import java.util.*
+import kotlin.collections.ArrayList
 import kotlin.random.Random
 
 class Capitolio {
-    var muertos= arrayOfNulls<Any>(10)
+    var muertos= ArrayList<Any>(10)
     var items= arrayOfNulls<Item>(100)
     fun recargaItems(): Array<Item?> {
         for(i in 0..items.size-1) {
@@ -20,5 +21,6 @@ class Capitolio {
         }
         return items
     }
+
 
 }
